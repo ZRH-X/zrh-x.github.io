@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Landing page oficial de JoaoGreen. Escucha su mayor y único éxito: Trash. Mira el videoclip oficial y síguelo en redes."
+    />
+    <meta name="theme-color" content="#12d66a" />
+    <title>JoaoGreen — Trash (Single Oficial)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+
+    <meta property="og:title" content="JoaoGreen — Trash" />
+    <meta
+      property="og:description"
+      content="Escucha Trash y mira el videoclip oficial."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">Joao<span>Green</span></div>
+        <nav class="nav">
+          <a href="#video">Videoclip</a>
+          <a href="#escuchar">Escuchar</a>
+          <a class="btn btn-primary" href="#video">Ver ahora</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Trash</h1>
+            <p>
+              El éxito que lo cambió todo. Ritmo, actitud y un sonido que se
+              queda contigo. Descubre el single oficial de
+              <strong>JoaoGreen</strong>.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#video">Ver videoclip</a>
+              <a class="btn btn-ghost" href="#escuchar">Escuchar ahora</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" class="section video-section">
+        <div class="container">
+          <h2>Videoclip oficial</h2>
+          <p class="subtitle">Mira el video musical de "Trash" en YouTube.</p>
+          <div class="video-frame">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/QIh-X503s2g?si=GyDvU_IdKbALPrRD"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="escuchar" class="section listen-section">
+        <div class="container">
+          <h2>Escúchalo en tu plataforma favorita</h2>
+          <p class="subtitle">Próximamente disponible en todas partes.</p>
+          <div class="platforms">
+            <a class="chip" href="#" aria-label="Escuchar en Spotify"
+              >Spotify</a
+            >
+            <a class="chip" href="#" aria-label="Escuchar en Apple Music"
+              >Apple Music</a
+            >
+            <a class="chip" href="#" aria-label="Escuchar en YouTube Music"
+              >YouTube Music</a
+            >
+            <a class="chip" href="#" aria-label="Escuchar en Deezer">Deezer</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> JoaoGreen. Todos los derechos reservados.
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+          <a href="#" aria-label="X/Twitter">X</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
